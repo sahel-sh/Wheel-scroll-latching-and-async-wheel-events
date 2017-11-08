@@ -19,15 +19,5 @@ element or its first ansestor that can scroll in the given direction. To impleme
 scroll sequence will be sent to JS before causing scroll and if not cancelled the rest of the wheel events are not cancellable
 for the duration of the latched scroll sequence. In this case scroll handling is asynchronous with handling wheel events.
 
-We can expose this information to [DOM wheel events](https://w3c.github.io/uievents/#events-wheelevents):
-
-```is_first_event : false | true | Unknown```  and
-
-```is_last_event : false | true | Unknown``` 
-or 
-
- ```is_cancellable : false | true | Unknown```
- 
- * The unkown value is necessary for traditional mouse devices that doesn't provid any information about state of scrolling.
- * is_cancellable will be true for first wheel events only.
+We can expose this information to [DOM wheel events](https://w3c.github.io/uievents/#events-wheelevents) as a normative text that "wheel events might be non-cancelable when a scroll is in progress".
 
