@@ -1,4 +1,4 @@
-# Heading 1 # Problem
+# Problem
 While scrolling using a touchscreen the scroll latches to a single element for the duration of the scrolling which is from when
 the user starts scrolling till the time that they lift their fingers; This behavior is known as scroll latching. Currently every wheel event is treated as an independent scrolling sequence and if not cancelled it scrolls the element that is under the
 cursor. Implementing latching behavior for wheel scrolling makes it similar to touch and it is currently supported in
@@ -7,7 +7,7 @@ Wheel scroll latching also enables a performance optimization which is not possi
 the first wheel event of a scrolling sequence is cancellable, this improves performance in cases that there are blocking
 wheel event listeners and the main thread is busy.
 
-Proposal
+# Proposal
 The proposal here is a summary of the design doc below:
 https://docs.google.com/document/d/1BizkQyW_FDU98sGxbHOZsAQWGYIA3xxXoFQZ3_XNo1o/edit#heading=h.1zmqj1pzgpl1
 
