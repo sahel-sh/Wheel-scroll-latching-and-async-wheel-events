@@ -17,4 +17,4 @@ wheel events during a timeout window.
 DOM events during a scrolling sequence are sent to a single element and if not cancelled they will cause scrolling of the 
 element or its first ansestor that can scroll in the given direction. To implement async wheel events only the first wheel of a
 scroll sequence will be sent to JS before causing scroll and if not cancelled the rest of the wheel events are not cancellable
-for the duration of the latched scroll sequence. The scroll handling is asynchronous with handling wheel events.
+for the duration of the latched scroll sequence. In this case scroll handling is asynchronous with handling wheel events.
