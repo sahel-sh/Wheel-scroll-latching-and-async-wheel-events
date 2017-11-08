@@ -28,6 +28,6 @@ or
 
  ```is_cancellable : false | true | Unknown```
  
- The unkown value is necessary for traditional mouse devices that doesn't provid any information about state of scrolling.
- is_cancellable will be true for first wheel events only.
+ *The unkown value is necessary for traditional mouse devices that doesn't provid any information about state of scrolling.
+ *is_cancellable will be true for first wheel events only.
 
