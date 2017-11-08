@@ -18,3 +18,10 @@ DOM events during a scrolling sequence are sent to a single element and if not c
 element or its first ansestor that can scroll in the given direction. To implement async wheel events only the first wheel of a
 scroll sequence will be sent to JS before causing scroll and if not cancelled the rest of the wheel events are not cancellable
 for the duration of the latched scroll sequence. In this case scroll handling is asynchronous with handling wheel events.
+
+We can expose this information to [DOM wheel events](https://w3c.github.io/uievents/#events-wheelevents):
+
+```is_first_event : false | true ```        
+or 
+ ```is_cancellable : false | true  ```
+
