@@ -1,7 +1,6 @@
 Problem
 While scrolling using a touchscreen the scroll latches to a single element for the duration of the scrolling which is from when
-the user starts scrolling till the time that they lift their fingers; This behavior is known as scroll latching. Currently every
-wheel event is treated as an independent scrolling sequence and if not cancelled it scrolls the element that is under the
+the user starts scrolling till the time that they lift their fingers; This behavior is known as scroll latching. Currently every wheel event is treated as an independent scrolling sequence and if not cancelled it scrolls the element that is under the
 cursor. Implementing latching behavior for wheel scrolling makes it similar to touch and it is currently supported in
 Firefox and Safari browsers.
 Wheel scroll latching also enables a performance optimization which is not possible otherwise: With latching enabled only
