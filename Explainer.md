@@ -8,8 +8,7 @@ the first wheel event of a scrolling sequence is cancellable, this improves perf
 wheel event listeners and the main thread is busy.
 
 # Proposal
-The proposal here is a summary of the design doc below:
-https://docs.google.com/document/d/1BizkQyW_FDU98sGxbHOZsAQWGYIA3xxXoFQZ3_XNo1o/edit#heading=h.1zmqj1pzgpl1
+The proposal here is a summary of this [design doc](https://docs.google.com/document/d/1BizkQyW_FDU98sGxbHOZsAQWGYIA3xxXoFQZ3_XNo1o/edit#heading=h.1zmqj1pzgpl1):
 
 To enable wheel scroll latching we need to know the beginning and end of a scrolling sequence. Some platforms (Mac and ChromeOS)
 give us this information with either additional input events or extra data (phase information) in wheel events. On other
