@@ -21,8 +21,11 @@ for the duration of the latched scroll sequence. In this case scroll handling is
 
 We can expose this information to [DOM wheel events](https://w3c.github.io/uievents/#events-wheelevents):
 
-```is_first_event : false | true | Unkown```        
+```is_first_event : false | true | Unkown```  
+
 or 
+
  ```is_cancellable : false | true | Unkown```
+ 
  The unkown value is necessary for traditional mouse devices that doesn't provid any information about state of scrolling.
 
